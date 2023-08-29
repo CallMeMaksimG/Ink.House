@@ -63,3 +63,31 @@ body {
     gap: 60px;
     margin-right: 60px;
 }
+
+.banner__container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.banner__title {
+    font-size: 60px;
+    padding: 145px 0 20px 0;
+
+    span {
+        color: $fontGreenColor;
+    }
+}
+
+.banner__text {
+    color: $fontGreyColor;
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+
+.banner__link {
+    color: $fontGreenColor;
+    padding: 20px 60px;
+    border: 1px solid $fontGreenColor;
+    display: inline-flex;
+}

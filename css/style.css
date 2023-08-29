@@ -78,3 +78,34 @@ body {
   gap: 60px;
   margin-right: 60px;
 }
+
+.banner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.banner__title {
+  font-size: 60px;
+  padding: 145px 0 20px 0;
+}
+.banner__title span {
+  color: #598D66;
+}
+
+.banner__text {
+  color: #86928B;
+  font-size: 18px;
+  padding-bottom: 60px;
+}
+
+.banner__link {
+  color: #598D66;
+  padding: 20px 60px;
+  border: 1px solid #598D66;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}

@@ -69,6 +69,12 @@ body {
     margin-right: 60px;
 }
 
+.nav__link {
+    &:hover {
+        color: $fontGreenColor;
+    }
+}
+
 .banner__container {
     display: flex;
     gap: 30px;
@@ -283,6 +289,7 @@ body {
 .team__text {
     font-size: 18px;
     margin-bottom: 20px;
+    line-height: 150%;
 }
 
 .team__image {
@@ -290,3 +297,92 @@ body {
     gap: 30px;
 }
 
+.footer {
+    background: $mainGreenColor;
+    padding: 23px 0 23px 0;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__logo {
+    margin-bottom: 35px;
+}
+
+.footer__phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__phone-number {
+    margin-bottom: 8px;
+
+    &:hover {
+        color: $fontGreenColor;
+    }
+}
+
+.footer__phone-text {
+    color: $fontGreyColor;
+    font-size: 18px;
+}
+
+.footer__right {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer__left {
+    margin-right: 115px;
+}
+
+.footer__menu-col {
+    margin-right: 60px;
+}
+
+.footer__menu {
+    display: flex;
+    margin-right: auto;
+}
+
+.footer__menu-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.footer__menu-list-item {
+    margin-bottom: 6px;
+}
+
+.footer__menu-link {
+    color: $fontGreyColor;
+    font-size: 18px;
+    line-height: 150%;
+
+    &:hover {
+        color: $fontGreenColor;
+    }
+}
+
+
+.socialmedia {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.footer__copyright {
+    color: $fontGreyColor;
+    font-size: 12px;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.socialmedia__link {
+    &:hover {
+        fill: #376B44;
+    }
+}

@@ -141,3 +141,15 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
+.catalog__tabs-btn.catalog__tabs-btn--active {
+  border: 2px solid #598D66;
+}
+.catalog__tabs-btn.catalog__tabs-btn--active:hover {
+  background-color: #376B44;
+  color: #F4F6F5;
+  border: none;
+}
+.catalog__tabs-btn:hover {
+  background: #598D66;
+  color: #F4F6F5;
+}

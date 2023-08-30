@@ -91,3 +91,29 @@ body {
     border: 1px solid $fontGreenColor;
     display: inline-flex;
 }
+
+.catalog__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.section__title {
+    font-size: 40px;
+}
+
+.catalog__tabs {
+    display: flex;
+    gap: 32px;
+}
+
+.catalog__tabs-btn {
+    border: none;
+    background: $mainGreenColor;
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}

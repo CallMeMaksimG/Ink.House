@@ -25,6 +25,10 @@ html, body {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   color: #2C2D35;
   font-size: 20px;
@@ -218,4 +222,64 @@ body {
 .product__btn:hover {
   background: #598D66;
   color: #F4F6F5;
+}
+
+.new {
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 70px 0 70px 0;
+}
+.new::before {
+  content: "";
+  background: rgba(13, 43, 67, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  mix-blend-mode: multiply;
+  -webkit-filter: blur(315px);
+          filter: blur(315px);
+}
+
+.new__title {
+  color: #F4F6F5;
+  font-size: 40px;
+  max-width: 521px;
+  padding-left: 100px;
+  z-index: 5;
+  position: relative;
+  background-image: url(../images/Star.svg);
+  background-position: left center;
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.new__content {
+  color: #F4F6F5;
+  position: relative;
+  font-size: 18px;
+  max-width: 540px;
+  line-height: 150%;
+  margin-bottom: 60px;
+}
+
+.new__text {
+  margin-bottom: 20px;
+}
+
+.new__link {
+  position: relative;
+  padding: 20px 60px;
+  background: #EEDB6D;
+  display: inline-block;
+  min-width: 257px;
+  font-size: 20px;
+}
+.new__link:hover {
+  background: #FAEB97;
 }

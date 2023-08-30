@@ -3,6 +3,7 @@
 
 html {
     box-sizing: border-box;
+    line-height: 1.15;
 }
 
 *, *::before, *::after {
@@ -123,7 +124,7 @@ body {
         &:hover {
             background-color: #376B44;
             color: $fontWhiteColor;
-            border: none;
+            border: 2px solid #376B44;
         }
     }
 
@@ -131,4 +132,65 @@ body {
         background: $fontGreenColor;
         color: $fontWhiteColor;
     }   
+}
+
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.product {
+    padding: 20px;
+    background: $mainGreenColor;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.product__content {
+    padding: 20px 0 10px 0;
+    
+}
+
+.product__author {
+    color: $fontGreyColor;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product__title {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.product__description{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.product__price {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: $fontGreenColor;
+}
+
+.product__btn {
+    background: transparent;
+    padding: 20px 40px;
+    display: inline-block;
+    color: $fontGreenColor;
+    font-family: Raleway;
+    font-size: 20px;
+    border: 1px solid #598D66;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background: #598D66;
+        color: $fontWhiteColor;
+    }
 }

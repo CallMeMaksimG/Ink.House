@@ -101,6 +101,11 @@ body {
     padding: 20px 60px;
     border: 1px solid $fontGreenColor;
     display: inline-flex;
+
+    &:hover {
+        background: #598D66;
+        color: $fontWhiteColor;
+    }
 }
 
 .catalog__nav {
@@ -119,6 +124,7 @@ body {
 }
 
 .catalog__tabs-btn {
+    position: relative;
     border: none;
     background: $mainGreenColor;
     color: #2C2D35;
@@ -127,6 +133,20 @@ body {
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
+    box-sizing: border-box;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid var(--color-leaves);
+        border-radius: inherit;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
 
     &.catalog__tabs-btn--active {
         // border: 2px solid #598D66;
@@ -139,6 +159,7 @@ body {
         //     border: 2px solid #376B44;
         // }
     }
+
 
     &:hover {
         background: $fontGreenColor;

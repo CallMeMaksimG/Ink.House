@@ -176,21 +176,20 @@ body {
   border: none;
 }
 .catalog__tabs-btn:hover {
-  background-color: #376B44;
-  color: #F4F6F5;
-}
-.catalog__tabs-btn:hover {
   background: #598D66;
   color: #F4F6F5;
 }
 
 .catalog__list {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 70px;
+}
+.catalog__list.catalog__list--active {
+  display: -ms-grid;
+  display: grid;
 }
 
 .product {

@@ -50,12 +50,12 @@
             <div class="catalog__nav">
                 <h2 class="section__title catalog__title">Репродукции</h2>
                 <ul class="catalog__tabs">
-                    <li class="catalog__tabs-item"><button class="catalog__tabs-btn" data-country="france">Франция</button></li>
+                    <li class="catalog__tabs-item"><button class="catalog__tabs-btn  catalog__tabs-btn--active" data-country="france">Франция</button></li>
                     <li class="catalog__tabs-item"><button class="catalog__tabs-btn" data-country="germany">Германия</button></li>
                     <li class="catalog__tabs-item"><button class="catalog__tabs-btn" data-country="england">Англия</button></li>
                 </ul>
             </div>
-            <ul class="catalog__list" data-country="france">
+            <ul class="catalog__list catalog__list--active" id="france">
                 <li class="catalog__list-item">
                     <article class="product">
                         <picture>
@@ -141,7 +141,7 @@
                     </article>
                 </li>
             </ul>
-            <!-- <ul class="catalog__list" data-country="germany">
+            <!-- <ul class="catalog__list" id="germany">
                 <li class="catalog__list-item">
                     <article class="product">
                         <picture>
@@ -157,7 +157,7 @@
                     </article>
                 </li>
             </ul> -->
-            <!-- <ul class="catalog__list" data-country="england">
+            <!-- <ul class="catalog__list" id="england">
                 <li class="catalog__list-item">
                     <article class="product">
                         <picture>
@@ -254,5 +254,6 @@
         </div>
     </footer>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>

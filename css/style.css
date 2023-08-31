@@ -151,12 +151,8 @@ body {
   cursor: pointer;
 }
 .catalog__tabs-btn.catalog__tabs-btn--active {
-  border: 2px solid #598D66;
-}
-.catalog__tabs-btn.catalog__tabs-btn--active:hover {
   background-color: #376B44;
   color: #F4F6F5;
-  border: 2px solid #376B44;
 }
 .catalog__tabs-btn:hover {
   background: #598D66;
@@ -164,12 +160,15 @@ body {
 }
 
 .catalog__list {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 70px;
+}
+.catalog__list.catalog__list--active {
+  display: -ms-grid;
+  display: grid;
 }
 
 .product {

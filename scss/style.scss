@@ -129,13 +129,15 @@ body {
     cursor: pointer;
 
     &.catalog__tabs-btn--active {
-        border: 2px solid #598D66;
-
-        &:hover {
-            background-color: #376B44;
-            color: $fontWhiteColor;
-            border: 2px solid #376B44;
-        }
+        // border: 2px solid #598D66;
+        background-color: #376B44;
+        color: $fontWhiteColor;
+        // border: 2px solid #376B44;
+        // &:hover {
+        //     background-color: #376B44;
+        //     color: $fontWhiteColor;
+        //     border: 2px solid #376B44;
+        // }
     }
 
     &:hover {
@@ -145,11 +147,15 @@ body {
 }
 
 .catalog__list {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
     margin-bottom: 70px;
+    &.catalog__list--active {
+        display: grid;
+    }
 }
+
 
 .product {
     padding: 20px;

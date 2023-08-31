@@ -171,9 +171,8 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 .catalog__tabs-btn.catalog__tabs-btn--active {
-  background: #376B44;
+  background-color: #376B44;
   color: #F4F6F5;
-  border: none;
 }
 .catalog__tabs-btn:hover {
   background: #598D66;

@@ -121,6 +121,8 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
 }
 .banner__link:hover {
   background: #598D66;
@@ -160,6 +162,8 @@ body {
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
 }
 .catalog__tabs-btn::after {
   content: "";
@@ -245,6 +249,8 @@ body {
   width: 100%;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
 }
 .product__btn:hover {
   background: #598D66;
@@ -307,6 +313,8 @@ body {
   display: inline-block;
   min-width: 257px;
   font-size: 20px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
 }
 .new__link:hover {
   background: #FAEB97;

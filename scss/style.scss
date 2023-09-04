@@ -103,6 +103,7 @@ body {
     padding: 20px 60px;
     border: 1px solid $fontGreenColor;
     display: inline-flex;
+    transition: background 0.5s;
 
     &:hover {
         background: #598D66;
@@ -136,6 +137,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     box-sizing: border-box;
+    transition: background 0.5s;
 
     &::after {
         content: "";
@@ -220,6 +222,7 @@ body {
     width: 100%;
     text-align: center;
     cursor: pointer;
+    transition: background 0.5s;
 
     &:hover {
         background: #598D66;
@@ -284,6 +287,7 @@ body {
     display: inline-block;
     min-width: 257px;
     font-size: 20px;
+    transition: background 0.5s;
 
     &:hover {
         background: #FAEB97;

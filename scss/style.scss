@@ -436,6 +436,18 @@ body {
     }
 }
 
+.burger--open {
+    .burger__line:nth-child(2) {
+        opacity: 0;
+    }
+    .burger__line:nth-child(1) {
+        transform: translateY(10px) rotate(-45deg);
+    }
+    .burger__line:nth-child(3) {
+        transform: translateY(10px) rotate(45deg);
+    }
+}
+
 @media(max-width: 780px) {
     .container {
         max-width: 768px;
@@ -698,8 +710,13 @@ body {
         padding-top: 76px;
         margin-top: 70px;
         padding-left: 15px;
-        z-index: 100;
-        display: none;
+        z-index: 4;
+        transform: translateX(-150%);
+        transition: transform 0.3s ease-in-out;
+
+        &.header__nav--active {
+            transform: none;
+        }
     }
 
     .header__right {

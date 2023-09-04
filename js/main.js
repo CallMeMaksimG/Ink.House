@@ -20,3 +20,12 @@ function open(event) {
 
     document.querySelector(`#${button}`).classList.add('catalog__list--active');
 }
+
+
+const burgerBtn = document.querySelector('.burger');
+const menu = document.querySelector('.header__nav');
+
+burgerBtn.addEventListener('click', () => {
+    menu.classList.toggle('header__nav--active');
+    burgerBtn.classList.toggle('burger--open');
+})

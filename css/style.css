@@ -455,6 +455,33 @@ body {
   fill: #376B44;
 }
 
+.burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+  top: 5px;
+  display: none;
+}
+
+.burger__line {
+  background: #4C5866;
+  position: absolute;
+  border-radius: 1px;
+  width: 30px;
+  height: 2px;
+  z-index: 5;
+}
+.burger__line:nth-child(1) {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+.burger__line:nth-child(3) {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
 @media (max-width: 780px) {
   .container {
     max-width: 768px;
@@ -805,5 +832,8 @@ body {
        object-fit: cover;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+  }
+  .burger {
+    display: block;
   }
 }

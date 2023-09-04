@@ -409,6 +409,32 @@ body {
     }
 }
 
+.burger {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+    top: 5px;
+    display: none;
+}
+.burger__line {
+    background: #4C5866;
+    position: absolute;
+    border-radius: 1px;
+    width: 30px;
+    height: 2px;
+    z-index: 5;
+    
+
+    &:nth-child(1) {
+        transform: translateY(10px);
+    }
+
+    &:nth-child(3) {
+        transform: translateY(20px);
+    }
+}
 
 @media(max-width: 780px) {
     .container {
@@ -781,5 +807,9 @@ body {
         width: 250px;
         object-fit: cover;
         flex-shrink: 0;
+    }
+
+    .burger {
+        display: block;
     }
 }

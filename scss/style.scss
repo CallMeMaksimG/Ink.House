@@ -49,7 +49,7 @@ body {
 }
 
 .header {
-    padding: 33px 0 33px 0;
+    padding: 18px 0 18px 0;
     background: $mainGreenColor;
 }
 
@@ -72,9 +72,22 @@ body {
 }
 
 .nav__link {
+    transition: color 0.3s ease-in-out;
     &:hover {
         color: $fontGreenColor;
     }
+}
+
+.cart {
+    svg path{
+        position: relative;
+        z-index: 5;
+        transition: stroke 0.3s ease-in-out;
+    }
+        svg:hover path{
+            stroke: $fontGreenColor;
+        }
+    
 }
 
 .banner__container {

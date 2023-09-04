@@ -54,7 +54,7 @@ body {
 }
 
 .header {
-  padding: 33px 0 33px 0;
+  padding: 18px 0 18px 0;
   background: #E1EDE6;
 }
 
@@ -88,8 +88,22 @@ body {
   margin-right: 60px;
 }
 
+.nav__link {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
 .nav__link:hover {
   color: #598D66;
+}
+
+.cart svg path {
+  position: relative;
+  z-index: 5;
+  -webkit-transition: stroke 0.3s ease-in-out;
+  transition: stroke 0.3s ease-in-out;
+}
+.cart svg:hover path {
+  stroke: #598D66;
 }
 
 .banner__container {

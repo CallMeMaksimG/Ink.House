@@ -398,6 +398,8 @@ body {
 
 .footer__phone-number {
   margin-bottom: 8px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 .footer__phone-number:hover {
   color: #598D66;
@@ -445,6 +447,8 @@ body {
   color: #86928B;
   font-size: 18px;
   line-height: 150%;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 .footer__menu-link:hover {
   color: #598D66;
@@ -472,6 +476,10 @@ body {
   gap: 6px;
 }
 
+.socialmedia__link {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
 .socialmedia__link:hover {
   fill: #376B44;
 }
@@ -740,19 +748,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .socialmedia__link svg {
-    -webkit-transition: fill 0.3s;
-    transition: fill 0.3s;
-    position: relative;
-    z-index: 5;
-    display: block;
-    width: 100%;
-    height: 100%;
-    fill: #2C2D35;
-  }
-  .socialmedia__link svg:hover path {
-    fill: #598D66;
   }
   .footer__props {
     border-top: 1px solid #C3D1C6;
